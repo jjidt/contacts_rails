@@ -1,0 +1,14 @@
+<h1><%= @contact.name %></h1>
+
+<ul>
+    <li><p>Phone:<%= @contact.phone %></p></li>
+    <li><p>Email:<%= @contact.email %></p></li>
+</ul>
+
+
+<p><a href="/contacts/<%= @contact.id %>/edit">Edit Contact</a></p>
+<p><a href="/contacts/<%= @contact.id %>"
+  data-confirm = "You sure?"
+  data-method = "delete"
+  rel = "nofollow">Delete</a></p>
+<p><a href="/contacts">Return to contact listing</a></p>
